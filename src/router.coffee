@@ -1,5 +1,4 @@
 url               = require 'url'
-MeshbluAuth       = require 'express-meshblu-auth'
 BroadcastController = require './controllers/broadcast-controller'
 
 class Router

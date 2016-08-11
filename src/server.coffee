@@ -18,7 +18,6 @@ class Server
 
   run: (callback) =>
     app = express()
-    app.use meshbluHealthcheck()
     app.use expressVersion(format: '{"version": "%s"}')
     app.use morgan 'dev', immediate: false unless @disableLogging
     app.use cors()
